@@ -1,9 +1,26 @@
-     console.log("Hallo WInc Academy studenten");
+   // Age check for bar
+   const age = 27;
 
-     /* let multiple = 1230941 * 1823794;
-     console.log(multiple);
+   if (age >= 18) {
+       console.log('Welcome');
+   } else {
+       console.log('Sorry you\'re not allowed to come in');
+   }
 
-     let divide = 637263 / 54;
-     console.log(divide); */
+   // Check for ladysnight
+   const isFemale = true;
 
-     // Dit is een grote som, comments worden niet weergegeven in de console of terminal
+   if (isFemale) {
+       console.log('So nice that you come join our ladys night!');
+   } else {
+       console.log('Sorry, this night is for ladys only. Please come back another day.');
+   }
+
+   // Who drives?
+   const driverStatus = 'bob';
+
+   if (driverStatus === 'bob') {
+       console.log('Wonderful, you are the bob and you can drive home');
+   } else {
+       console.log('Are yoy crazy? Don\'t drive when you had a couple of drinks! Order a taxi and go home!');
+   }
