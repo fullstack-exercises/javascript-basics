@@ -1,6 +1,17 @@
-for (i = 1; i <= 10; i++) {
-    const table9 = 9;
-
-    console.log('1 x ' + table9 + ' = ' + i * table9);
+function assignGrade(score) {
+    if (score > 90) {
+        return "A";
+    } else if (score > 80) {
+        return "B";
+    } else if (score > 70) {
+        return "C";
+    } else if (score > 65) {
+        return "D";
+    } else {
+        return "F";
+    }
 }
-console.log('test');
+
+for (let i = 60; i <= 100; i++) {
+    console.log("Voor " + i + " punten, krijg je een " + assignGrade(i));
+}
