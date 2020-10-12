@@ -20,11 +20,29 @@ colors.forEach(color => {
     console.log(color);
 });
 
-// Hoeveel regels neemt mijn for loop en mijn while loop in beslag?
-// A: 3
+// 1.Hoeveel regels neemt mijn for loop en mijn while loop in beslag?
+// A: for loop 3 regels en while loop 5 regels.
 
-// Hoeveel regels neemt mijn forEach method in beslag?
-// A: 1
+// 2.Hoeveel regels neemt mijn forEach method in beslag?
+// A: 1 met een arrow functie
 
-// Welke voordelen heeft het gebruiken van een array method nog meer t.o.v. een for of een while loop? Welke methode vind je bijvoorbeeld makkelijker leesbaar? Waarom?
-// A: Overzichtelijker
+// 3. Een array method heeft een aantal voordelen:
+// --> je kunt niet meer verstrikt raken in een infinite loop.
+// --> je hoeft niet meer bij te houden met een i, bij welke iteratie je bent.
+// --> je hebt direct toegang tot het item waar je overheen loopt dmv het argument en de callback-functie die je de array-method geeft als argument.
+// --> de naam "forEach" zegt ook meteen wat je gaat doen en is semantischer dan een while of for loop.
+
+const myColors = {
+    colorWall: "blue",
+    colorFruit: "orange",
+    colorCar: "red",
+    colorHair: "white",
+    colorGras: "green",
+};
+
+for (x in myColors) {
+    console.log(myColors[x]);
+}
+
+// Ja, je bent nu aan het itereren. Echter ben je aan het itereren over een OBJECT.
+// Array Methods zijn NIET beschikbaar op een object.
